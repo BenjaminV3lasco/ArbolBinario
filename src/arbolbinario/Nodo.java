@@ -13,15 +13,20 @@ public class Nodo
     }
     public Nodo(Nodo ramaIzdo, Object valor, Nodo ramaDcho)
     {
-    this(dato);
+    //this(dato);
     izdo = ramaIzdo;
     dcho = ramaDcho;
     }
     // Operaciones de acceso
-    public Object valorNodo(){ return valor; }
+    //public Object valorNodo(){ return valor; }
     public Nodo subarbolIzdo(){ return izdo; }
     public Nodo subarbolDcho(){ return dcho; }
     public void nuevoValor(Object d){ dato = d; }
     public void ramaIzdo(Nodo n){ izdo = n; }
     public void ramaDcho(Nodo n){ dcho = n; }
+    
+    void visitar()
+    {
+    System.out.print(dato + " ");
+    }
 }
