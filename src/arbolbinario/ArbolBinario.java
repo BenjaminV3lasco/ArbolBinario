@@ -5,6 +5,9 @@ public class ArbolBinario {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int respuesta;
+        ArbolBinario arbol;
+        Nodo num1, num2, num;
+        PilaVector pila = new PilaVector();
         do{
             System.out.println("¡Buenos dias!");
             System.out.println("Ingrese 1 para insertar un nodo");

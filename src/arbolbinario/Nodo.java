@@ -13,17 +13,25 @@ public class Nodo
     }
     public Nodo(Nodo ramaIzdo, Object valor, Nodo ramaDcho)
     {
-    //this(dato);
-    izdo = ramaIzdo;
-    dcho = ramaDcho;
+    this.dato = dato;
+    this.izdo = izdo;
+    this.dcho = dcho;
     }
-    // Operaciones de acceso
-    //public Object valorNodo(){ return valor; }
-    public Nodo subarbolIzdo(){ return izdo; }
-    public Nodo subarbolDcho(){ return dcho; }
-    public void nuevoValor(Object d){ dato = d; }
-    public void ramaIzdo(Nodo n){ izdo = n; }
-    public void ramaDcho(Nodo n){ dcho = n; }
+     public Nodo getIzquierdo() {
+        return this.izdo;
+    }
+
+    public void setIzquierdo(Nodo izquierdo) {
+        this.izdo = izdo;
+    }
+
+    public Nodo getDerecho() {
+        return this.dcho;
+    }
+
+    public void setDerecho(Nodo derecho) {
+        this.dcho = dcho;
+    }
     
     void visitar()
     {
