@@ -22,6 +22,9 @@ public class ArbolBinarioo {
     return raiz;
     }
     
+    //Método Eliminar
+    
+    
     // Comprueba el estatus del árbol
     boolean esVacio()
     {
